@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Woods - Psicólogo</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <h1>Pablo Woods</h1>
+        <h3>Psicólogo MN:1743</h3>
+    </div>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre">Sobre Mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button id="reservar">Reservar turno</button>
+   </header> 
+   <main>
+    <div class="divcentral" id="inicio">
+        <div>
+            <h2>Una escucha profesional que te ayudará a vivir mejor</h2>
+            <p>Nos orientamos al tratamiento de los padecimientos singulares en cualquiera de sus expresiones. Un acompañamiento profesional que permitirá ir encontrando nuevos recursos para mejorar la calidad de vida, para afrontar lo que toca vivir y alcanzar lo que uno desea para si, en un espacio terapéutico de confianza y empatía.</p>
+        </div>
+       
+    </div>
+
+    <h2 class="titulo-seccion" id="servicios">Servicios</h2>
+
+    <div class="contenedor-servicios">
+        <div>
+            <img src="img/migrana.png" alt="Migraña">
+            <h3>Psicología clínica integral</h3>
+            <p>Un espacio terapéutico acorde a la singularidad de cada consultante, la modalidad varía en función de las necesidades particulares.</p>
+        </div>
+        <div>
+            <img src="img/documento-legal.png" alt="Documento Legal">
+            <h3>Psicología jurídica</h3>
+            <p>Se evalúa el estado actual del sujeto en relación con un hecho traumático que genera sufrimiento psíquico o daño psicológico del solicitante.</p>
+        </div>
+        <div>
+            <img src="img/books-2.png" alt="Libros">
+            <h3>Psicología educacional</h3>
+            <p>Asesoramiento a familias e instituciones educativas.</p>
+        </div>
+    </div>
+
+    <div class="seccion-corte">
+        <h2 class="titulo-seccion" id="sobre">Sobre Mí</h2>
+
+    <div class="contenedor-sobre">
+        <img src="img/foto.png" alt="Adriel">
+
+        <h3>Pablo Woods</h3>
+
+        <p>Psicólogo egresado de la Universidad Nacional de Córdoba. Matriculado 1743. Trabajo principalmente con adolescentes y adultos jóvenes, buscando diseñar herramientas que permitan enfrentar y resolver problemas puntuales.
+
+            Me interesa particularmente el trabajo con duelos amorosos, ansiedad, problemas de autoestima y vínculos afectivos.
+            
+            Mi orientación psicoterapéutica es integradora, lo que me permite adaptar y personalizar mi intervención según la persona que tengo delante. Desde este enfoque trabajo diferentes áreas, como por ejemplo: estrés, ansiedad, habilidades sociales, autoestima, gestión emocional, depresión, relaciones interpersonales y asertividad.</p>
+    </div>
+    </div>
+
+    
+
+    <h2 class="titulo-seccion" id="contacto">Contacto</h2>
+
+    <p class="p-contacto">No dudes en consultarnos, llamanos o escribinos por WhatsApp estamos para ayudarte</p>
+
+    <div class="contenedor-contacto">
+        <div>
+            <i class="fa-brands fa-whatsapp"></i>
+            <h5>+54 9 2604381753</h5>
+        </div>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            <h5>psi.woods@gmail.com</h5>
+        </div>
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <h5>Bernardino Izuel 678 - San Rafael Mendoza</h5>
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1088831.5840795378!2d-68.40082851930798!3d-34.71267594965078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679080d2e7824b3%3A0xd5b7d13a54fcc6a6!2sBernardino%20Izuel%20678%2C%20M5600GRU%20San%20Rafael%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1686855125811!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </main>
+   <footer>
+    <h4>Pablo Woods - Copyright 2023 - Todos los derechos reservados</h4>
+   </footer>
+
+
+   <div class="modal-background">
+    <div class="modal-content">
+        <p><span class="close">&times;</span></p>
+        <h2>Reservar turno</h2>
+        <h3>Elegir fecha</h3>
+        <input type="date" id="fecha-turno" required>
+        <h3>Elegir Hora</h3>
+        <input type="time" id="appt" min="09:00" max="18:00" required>
+        <h3>Escribir DNI</h3>
+        <input type="text" id="dni-turno" required>
+    
+        <button id="agendar">Agendar</button>
+    </div>
+  </div>
+
+  <div class="logo-wp">
+    <a href="https://api.whatsapp.com/send?phone=542604381753"><img src="img/whatsapp-logo.webp" alt="WhatsApp"></a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

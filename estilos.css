@@ -1,0 +1,239 @@
+*{
+    margin: 0; /* Borrado de espacios innecesarios */
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Playfair', serif; /* Colocación de tipografía de GOOGLE FONTS a todo el sitio*/
+}
+
+header{
+    background-color: #545B77;
+    padding: 15px;
+    display: flex;
+    justify-content:space-between; /* alinear en forma horiz */
+    align-items: center; /* alinear en forma vertic */
+}
+
+h1{
+    color:white;
+}
+ul{
+    list-style: none;  /* para sacar las viñetas de la lista */
+    display: flex;
+    gap:25px;
+}
+a{
+    color:#F2D8D8;
+    text-decoration: none; /* sacar subrayado a los enlaces */
+    font-size: 18px; /* cambiar tamaño letra */
+}
+a:hover{
+    color:white
+}
+
+
+header button{
+    font-family: 'Playfair', serif;
+    background-color: black;
+    color:white;
+    padding:5px;
+    border:none; /* quitar borde */
+    cursor:pointer; /* cursor mano */
+}
+
+header button:hover{
+    background-color: #333;
+}
+
+.divcentral{
+    background-image: url("img/img-central.jpg"); /* imagen de fondo */
+    background-repeat: no-repeat; /* que no se repita */
+    background-size: cover; /* que me cubra todo el div */
+    background-position: center; /* que se posicione en el medio */
+    height:450px; /* alto */
+    display: flex;
+    align-items: center;
+}
+
+    .divcentral div{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+
+    }
+
+    .divcentral h2{
+        font-size: 40px;
+    }
+
+    .divcentral p{
+        width: 50%;
+        text-align: center;
+    }
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 45px;
+    margin-top:20px;
+    margin-bottom:35px;
+}
+
+.contenedor-servicios{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+    .contenedor-servicios div{
+        flex-basis: 300px;
+        /* flex:1; */
+    }
+
+    .contenedor-servicios h3{
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-servicios p{
+        line-height: 2;
+    }
+
+    .seccion-corte{
+        background-color: #213555;
+        padding:20px;
+        color:white;
+        margin-top:30px;
+    }
+
+    .contenedor-sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-sobre img{
+        width: 150px;
+        border-radius:50%
+    }
+
+    .contenedor-sobre h3{
+        font-size:30px;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .contenedor-sobre p{
+        width: 50%;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .p-contacto{
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-contacto{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .contenedor-contacto i{
+        color: white;
+    font-size: 20px;
+    background-color: #213555;
+    padding: 10px;
+    border-radius: 100%;
+    }
+
+    .contenedor-contacto h5{
+        font-size:20px;
+        margin-top:20px
+    }
+
+    iframe{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    footer{
+        background-color: #545B77;
+        padding: 20px;
+        text-align: center;
+        color:white;
+    }
+
+    .logo-wp{
+        position:fixed; /* posicionar elemento abajo a la derecha */
+        bottom: 20px;
+        right: 20px;
+        z-index: 0; /* posicionar el logo por detras del fondo del modal */
+    }
+
+    .logo-wp img{
+        width:50px
+    }
+
+    /* MODAL */
+
+    /* fondo transparente del modal */
+    .modal-background{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 1; /* posicionar el fondo primero */
+        display: none; /* ocultar fondo */
+    }
+
+    .modal-content{
+        background-color:white;
+        padding: 20px;
+        width: 50%;
+        margin:15% auto; /* posicionar en el medio */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-content p{
+        text-align: right;
+    }
+
+    .close{
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .modal-content h2{
+        border-bottom: 1px solid #213555; /* borde inferior */
+    }
+
+    .modal-content input{
+        padding: 5px 10px;
+    }
+
+    .modal-content button{
+        font-family: 'Playfair', serif;
+        background-color: black;
+        color:white;
+        padding:5px;
+        border:none; /* quitar borde */
+        cursor:pointer; /* cursor mano */
+    }
